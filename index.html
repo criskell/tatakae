@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tatakae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <nav class="menu menu-left">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="#quemsomos">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="#quemsomos">Equipe</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Tatakae</h1>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#servicos">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#projetos">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div>
+                <h1>Olá, somos a TATAKAE</h1>
+                <p>Uma agência de desenvolvimento web preocupada em tornar seus sonhos tangíveis.</p>
+                <button onclick="location.href='#quemsomos';">Quero conhecer mais</button>
+            </div>
+        </section>
+    </div>
+
+    <main>
+        <section class="about" id="quemsomos">
+            <div class="about-inner">
+                <div class="who-we">
+                    <div class="about-header">
+                        <img src="https://64.media.tumblr.com/8118618d302f8e7041f307cfbc4674d8/ef8cea0285febf69-82/s400x600/f496014503e9dd9ea47fb3c195956c634e507d5d.gifv">
+                        <h1>Quem somos</h1>
+                    </div>
+                    <p class="description">Uma empresa de desenvolvimento web que almeja construir seus sonhos no mundo virtual. Somos uma equipe composta por programadores, designers, sysadmins e muito mais. Desenvolvemos sistemas dos mais diversos tamanhos para todas as instituições possíveis. Utilizamos a plataforma Java no Backend e no Frontend utilizamos o framework Angular.</p>
+                </div>
+                <div class="about-body">
+                    <div class="about-team" id="nossaequipe">
+                        <h2>Nossa equipe</h2>
+                        <ul>
+                            <li>
+                                <img src="https://www.gifcen.com/wp-content/uploads/2021/08/eren-yeager-gif-2.gif" alt="">
+                                <p>Eren Yeager</p>
+                            </li>
+                            <li>
+                                <img src="https://pa1.narvii.com/6845/6cd3ab2664aff8789debb27c23839d3547e49f31_hq.gif" alt="">
+                                <p>Levi Ackerman</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="what-do" id="servicos">
+            <div class="what-do-header">
+                <h1>O que podemos fazer por você</h1>
+                <p><em>Além de assistir animes?</em></p>
+            </div>
+
+            <ul class="services container">
+                <li>
+                    <h1>Criar seu sistema</h1>
+                    <p>Criamos seu sistema utilizando as mais modernas tecnologias como NodeJS, HTML5 e CSS3.</p>
+                </li>
+                <li>
+                    <h1>Criar seus sistemas automatizados</h1>
+                    <p>Criamos web crawlers para fornecer dados para machine learning e criamos automatizadores das mais diversas tarefas.</p>
+                </li>
+                <li>
+                    <h1>Criar sua loja virtual</h1>
+                    <p>Precisamos converter sua loja física em loja virtual utilizando CMS como Magento.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="projects" id="projetos">
+            <h1>Nossos projetos</h1>
+
+            <ul>
+                <li>
+                    <img src="https://wpastra.com/wp-content/uploads/2021/02/Bill-erickson-portfolio-website.jpeg">
+                    <p>Portfólio</p>
+                </li>
+                <li>
+                    <img src="https://wpastra.com/wp-content/uploads/2021/02/Bill-erickson-portfolio-website.jpeg">
+                    <p>Portfólio</p>
+                </li>
+                <li>
+                    <img src="https://wpastra.com/wp-content/uploads/2021/02/Bill-erickson-portfolio-website.jpeg">
+                    <p>Portfólio</p>
+                </li>
+            </ul>
+        </section>
+        <section class="contact" id="contato">
+            <h1>Contato</h1>
+
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome aqui...">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail aqui...">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" name="subject" id="subject" placeholder="Digite o assunto aqui...">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Obrigado por ler até aqui. &copy; 2022 TATAKAE.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #222;
+    font-size: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    height: 90px;
+    color: #fff;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li {
+    margin-right: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.pinimg.com/originals/10/e3/bb/10e3bbe261387e739591466d62a10ec9.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+.hero {
+    min-height: 100vh;
+    background-size: cover;
+    padding: 5%;
+    color: #fff;
+    position: relative;
+}
+
+.hero div {
+    position: absolute;
+    bottom: 25%;
+}
+
+.hero h1 {
+    font-size: 5em;
+}
+
+.hero p {
+    font-size: 4em;
+}
+
+.hero button {
+    background: #5DB7DE;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 15px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images5.alphacoders.com/120/1203843.png);
+    color: #fff;
+    background-size: cover;
+    padding: 50px 0;
+    padding-bottom: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+}
+
+.about-header h1 {
+    margin-left: 15px;
+}
+
+.about h1 {
+    font-size: 4em;
+}
+
+.about-inner > div {
+    width: 45%;
+}
+
+.about img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.about-body {
+    margin-top: 15px;
+}
+
+.about-team ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.about-team h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.about-team ul li {
+    margin-right: 50px;
+    text-align: center;
+}
+
+.about-team img {
+    object-fit: cover;
+}
+
+.who-we .description {
+    margin-top: 15px;
+}
+
+.what-do {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://static.wikia.nocookie.net/shingekinokyojin/images/2/2b/Paths_%28Anime%29.png/revision/latest?cb=20190624024122);
+    color: #fff;
+    background-size: cover;
+    padding: 50px 0;
+    padding-bottom: 0;
+    height: 100vh;
+}
+
+.what-do-header {
+    text-align: center;
+}
+
+.what-do-header h1 {
+    font-size: 4em;
+}
+
+.services {
+    display: flex;
+    justify-content:last baseline;
+    list-style-type: none;
+    margin-top: 10%;
+}
+
+.services p {
+    margin-top: 15px;
+    max-width: 90%;
+}
+
+.projects {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://art.ngfiles.com/images/2362000/2362305_chocoholicmonkey_the-paths.png?f1645284613);
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+    padding: 50px 5%;
+    padding-bottom: 0;
+    height: 100vh;
+}
+
+.projects h1 {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.projects ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects ul li {
+    margin-right: 15px;
+}
+
+.projects ul li img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.pinimg.com/originals/0b/a7/be/0ba7bee987e8ba800e6e88064e218925.jpg);
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+    padding: 50px 5%;
+    padding-bottom: 0;
+    height: 100vh;
+}
+
+.contact h1 {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.contact button {
+    background: #5DB7DE;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 15px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.contact form {
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    height: 45px;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://nntheblog.com/wp-content/uploads/2022/03/aot-paths-5.png);
+}

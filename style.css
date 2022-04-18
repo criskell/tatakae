@@ -62,20 +62,21 @@ header h1 {
     background-size: cover;
     padding: 5%;
     color: #fff;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .hero div {
-    position: absolute;
-    bottom: 25%;
+    margin-bottom: 15%;
 }
 
 .hero h1 {
-    font-size: 5em;
+    font-size: 4.5em;
 }
 
 .hero p {
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 .hero button {
@@ -91,18 +92,20 @@ header h1 {
 }
 
 .about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images5.alphacoders.com/120/1203843.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://staticg.sportskeeda.com/editor/2022/03/1ed34-16465147707703-1920.jpg);
     color: #fff;
     background-size: cover;
     padding: 50px 0;
     padding-bottom: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .about-inner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     max-width: 95%;
@@ -111,6 +114,7 @@ header h1 {
 
 .about-header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -118,12 +122,12 @@ header h1 {
     margin-left: 15px;
 }
 
-.about h1 {
+.about-header h1 {
     font-size: 4em;
 }
 
 .about-inner > div {
-    width: 45%;
+    flex-basis: 45%;
 }
 
 .about img {
@@ -139,6 +143,7 @@ header h1 {
 
 .about-team ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
 }
 
@@ -161,12 +166,12 @@ header h1 {
 }
 
 .what-do {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://static.wikia.nocookie.net/shingekinokyojin/images/2/2b/Paths_%28Anime%29.png/revision/latest?cb=20190624024122);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images5.alphacoders.com/120/1203843.png);
     color: #fff;
     background-size: cover;
     padding: 50px 0;
     padding-bottom: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .what-do-header {
@@ -179,24 +184,28 @@ header h1 {
 
 .services {
     display: flex;
-    justify-content:last baseline;
-    list-style-type: none;
+    justify-content: center;
+    align-items: center;
     margin-top: 10%;
+    flex-wrap: wrap;
+}
+
+.services div {
+    flex-basis: 30%;
+    margin-right: 15px;
 }
 
 .services p {
     margin-top: 15px;
-    max-width: 90%;
 }
 
 .projects {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://art.ngfiles.com/images/2362000/2362305_chocoholicmonkey_the-paths.png?f1645284613);
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
     background-size: cover;
     padding: 50px 5%;
-    padding-bottom: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .projects h1 {
@@ -206,28 +215,31 @@ header h1 {
 
 .projects ul {
     list-style-type: none;
-    display: flex;
     justify-content: space-between;
 }
 
 .projects ul li {
     margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.projects ul li:last-child {
+    margin-bottom: 0;
 }
 
 .projects ul li img {
-    width: 400px;
-    height: 400px;
     object-fit: cover;
+    max-width: 100%;
 }
 
 .contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.pinimg.com/originals/0b/a7/be/0ba7bee987e8ba800e6e88064e218925.jpg);
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
     background-size: cover;
     padding: 50px 5%;
     padding-bottom: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .contact h1 {
@@ -278,10 +290,526 @@ textarea {
     height: 200px;
 }
 
+.mobile-menu-icon, .mobile-menu {
+    display: none;
+}
+
 footer {
-    height: 60px;
-    line-height: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     color: #fff;
     background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://nntheblog.com/wp-content/uploads/2022/03/aot-paths-5.png);
+}
+
+@media (max-width: 1300px) {
+    .about-header h1 {
+        font-size: 2.5em;
+    } 
+
+    .hero h1 {
+        font-size: 4em;
+    }
+    
+    .hero p {
+        font-size: 3em;
+    }
+
+    .projects ul li {
+        flex-basis: 30%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about-header h1 {
+        font-size: 2.5em;
+    } 
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+    
+    .hero p {
+        font-size: 2.5em;
+    }
+
+    .projects ul li {
+        flex-basis: 30%;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-header h1 {
+        font-size: 2.5em;
+    } 
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+    
+    .hero p {
+        font-size: 2.5em;
+    }
+
+    .projects ul li {
+        flex-basis: 30%;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+    .what-do-header h1 {
+        font-size: 2.5em;
+    }
+
+    .awhat-do-header h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-header {
+        display: unset;
+    }
+
+    .about-header h1 {
+        font-size: 2.5em;
+        margin-left: 0;
+        display: block;
+    } 
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+    
+    .hero p {
+        font-size: 2.5em;
+    }
+
+    .projects ul li {
+        flex-basis: 30%;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+    .what-do-header h1 {
+        font-size: 2.5em;
+    }
+
+    .awhat-do-header h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero div {
+        margin-bottom: 0;
+    }
+
+    .hero {
+        align-items: center;
+    }
+
+    .hero button {
+        margin-top: 35px;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .hero p {
+        font-size: 1.8em;
+    }
+
+    .about-header h1 {
+        font-size: 2em;
+    }
+
+    .about-header h2 {
+        font-size: 2em;
+    }
+
+    .what-do-header h1 {
+        font-size: 2em;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+        flex-wrap: wrap;
+    }
+    
+    .services div {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    
+    .aservices p {
+        margin-top: 15px;
+    }
+
+    .awhat-do-header h1 {
+        font-size: 2em;
+    }
+
+    .aservices {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+        flex-wrap: wrap;
+    }
+    
+    .aservices div {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    
+    .aservices p {
+        margin-top: 15px;
+    }
+
+    .about-inner .who-we {
+        flex-basis: 55%;
+    }
+
+    .about-inner .about-body {
+        flex-basis: 30%;
+    }
+
+    header {
+        justify-content: flex-start;
+        padding-left: 10%;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon {
+        color: #fff;
+        fill: #fff;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        background: #000;
+        width: 100%;
+        color: white;
+        padding: 15px;
+    }
+
+    .mobile-menu ul {
+        list-style-type: none;
+    }
+    
+    .mobile-menu ul li {
+        margin-bottom: 25px;
+    }
+
+    .mobile-menu ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .mobile-menu ul li a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    body.servicos-page footer {
+        position: static;
+        left: 0;
+        transform: none;
+    }
+
+    body.about-page footer {
+        position: static;
+        left: 0;
+        transform: none;
+    }
+
+    body.about-page .bout-header h1 {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact form {
+        width: 100%;
+    }
+
+    .what-do-header h1 {
+        font-size: 1.5em;
+    }
+
+    .awhat-do-header h1 {
+        font-size: 1.5em;
+    }
+}
+
+.about-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://cdn.donmai.us/original/c3/c0/__mikasa_ackerman_eren_yeager_and_armin_arlert_shingeki_no_kyojin_drawn_by_nuriko_kun__c3c06c81682a3d675c6f9a8cb8f2fe68.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.hero-about {
+    background-size: cover;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5%;
+    color: #fff;
+    background-image: none;
+    background-size: cover;
+    padding: 50px 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bout-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.bout-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bout-header h1 {
+    margin-left: 15px;
+}
+
+.bout-header h1 {
+    font-size: 4em;
+}
+
+.hero-about img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.bout-body {
+    margin-top: 50px;
+}
+
+.bout-team ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.bout-team h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.bout-team ul li {
+    margin-right: 50px;
+    text-align: center;
+}
+
+.bout-team img {
+    object-fit: cover;
+}
+
+.about-page footer {
+    background-image: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.servicos-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images5.alphacoders.com/120/1203843.png);
+    background-size: cover;
+}
+
+
+.awhat-do {
+    color: #fff;
+    background-size: cover;
+    padding: 50px 0;
+    padding-bottom: 0;
+    min-height: 100vh;
+}
+
+.awhat-do-header {
+    text-align: center;
+}
+
+.awhat-do-header h1 {
+    font-size: 4em;
+}
+
+.aservices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+
+.aservices div {
+    flex-basis: 30%;
+    margin-right: 15px;
+}
+
+.aservices p {
+    margin-top: 15px;
+}
+
+.servicos-page footer {
+    background-image: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projetos-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://art.ngfiles.com/images/2362000/2362305_chocoholicmonkey_the-paths.png?f1645284613);
+    background-size: cover;
+}
+
+
+.aprojects {
+    color: #fff;
+    background-size: cover;
+    padding: 50px 0;
+    padding-bottom: 0;
+    min-height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.aprojects h1 {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.aprojects ul {
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.aprojects ul li {
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.aprojects ul li:last-child {
+    margin-bottom: 0;
+}
+
+.aprojects ul li img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.projetos-page footer {
+    background-image: none;
+}
+
+
+
+.contato-page {
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.pinimg.com/originals/0b/a7/be/0ba7bee987e8ba800e6e88064e218925.jpg);
+    
+}
+
+.contato-page footer {
+    background-image: none;
+}
+
+
+
+
+.acontact {
+    min-height: 100vh;
+    color: #fff;
+    background-size: cover;
+    padding: 50px 5%;
+    padding-bottom: 0;
+    min-height: 100vh;
+}
+
+.acontact h1 {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.acontact button {
+    background: #5DB7DE;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 15px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.acontact form {
+    width: 90%;
+}
+
+.home-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.pinimg.com/originals/10/e3/bb/10e3bbe261387e739591466d62a10ec9.png);
+    background-size: cover;
+}
+
+.home-page .hero {
+    min-height: 80vh;    
+    padding-bottom: 0;
+}
+
+.home-page .hero div {
+    margin-bottom: 10%;
+}
+
+.home-page footer {
+    background-image: none;
 }

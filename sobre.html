@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sobre | Tatakae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="about-page">
+        <header>
+            <div class="mobile-menu-icon">
+                    <svg viewBox="0 0 100 80" width="30" height="30">
+                            <rect width="100" height="20" rx="8"></rect>
+                            <rect y="30" width="100" height="20" rx="8"></rect>
+                            <rect y="60" width="100" height="20" rx="8"></rect>
+                        </svg>
+            </div>
+            <nav class="menu menu-left">
+                <ul>
+                    <li>
+                        <a href="home.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Equipe</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Tatakae</h1>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="projetos.html">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Equipe</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="projetos.html">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+        </nav>
+        <section class="hero-about">
+            <div class="bout-inner">
+                <div class="who-we">
+                    <div class="bout-header">
+                        <img src="https://64.media.tumblr.com/8118618d302f8e7041f307cfbc4674d8/ef8cea0285febf69-82/s400x600/f496014503e9dd9ea47fb3c195956c634e507d5d.gifv">
+                        <h1>Quem somos</h1>
+                    </div>
+                    <p class="description">Uma empresa de desenvolvimento web que almeja construir seus sonhos no mundo virtual. Somos uma equipe composta por programadores, designers, sysadmins e muito mais. Desenvolvemos sistemas dos mais diversos tamanhos para todas as instituições possíveis. Utilizamos a plataforma Java no Backend e no Frontend utilizamos o framework Angular.</p>
+                </div>
+                <div class="bout-body">
+                    <div class="bout-team" id="nossaequipe">
+                        <h2>Nossa equipe</h2>
+                        <ul>
+                            <li>
+                                <img src="https://www.gifcen.com/wp-content/uploads/2021/08/eren-yeager-gif-2.gif" alt="">
+                                <p>Eren Yeager</p>
+                            </li>
+                            <li>
+                                <img src="https://pa1.narvii.com/6845/6cd3ab2664aff8789debb27c23839d3547e49f31_hq.gif" alt="">
+                                <p>Levi Ackerman</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <p>Obrigado por ler até aqui. Projeto feito por Cristiano. &copy; 2022 TATAKAE.</p>
+    </footer>
+    <script>
+        const $enableMobileMenuButton = document.querySelector('.mobile-menu-icon');
+        const $mobileMenu = document.querySelector('.mobile-menu');
+
+        function toggleMobileMenu() {
+            const currentDisplay = $mobileMenu.style.display;
+            $mobileMenu.style.display = currentDisplay === 'block' ? 'none' : 'block';
+        }
+
+        $enableMobileMenuButton.addEventListener('click', toggleMobileMenu);
+        $mobileMenu.querySelectorAll('li').forEach((e) => e.addEventListener('click', toggleMobileMenu));
+    </script>
+</body>
+</html>

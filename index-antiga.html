@@ -13,6 +13,13 @@
 <body>
     <div class="background">
         <header>
+            <div class="mobile-menu-icon">
+                    <svg viewBox="0 0 100 80" width="30" height="30">
+                            <rect width="100" height="20" rx="8"></rect>
+                            <rect y="30" width="100" height="20" rx="8"></rect>
+                            <rect y="60" width="100" height="20" rx="8"></rect>
+                        </svg>
+            </div>
             <nav class="menu menu-left">
                 <ul>
                     <li>
@@ -41,6 +48,28 @@
                 </ul>
             </nav>
         </header>
+        <nav class="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="#quemsomos">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="#quemsomos">Equipe</a>
+                    </li>
+                    <li>
+                        <a href="#servicos">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#projetos">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        </nav>
         <section class="hero">
             <div>
                 <h1>Olá, somos a TATAKAE</h1>
@@ -83,29 +112,25 @@
                 <p><em>Além de assistir animes?</em></p>
             </div>
 
-            <ul class="services container">
-                <li>
+            <div class="services">
+                <div>
                     <h1>Criar seu sistema</h1>
                     <p>Criamos seu sistema utilizando as mais modernas tecnologias como NodeJS, HTML5 e CSS3.</p>
-                </li>
-                <li>
+                </div>
+                <div>
                     <h1>Criar seus sistemas automatizados</h1>
                     <p>Criamos web crawlers para fornecer dados para machine learning e criamos automatizadores das mais diversas tarefas.</p>
-                </li>
-                <li>
+                </div>
+                <div>
                     <h1>Criar sua loja virtual</h1>
                     <p>Precisamos converter sua loja física em loja virtual utilizando CMS como Magento.</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
         <section class="projects" id="projetos">
             <h1>Nossos projetos</h1>
 
             <ul>
-                <li>
-                    <img src="https://wpastra.com/wp-content/uploads/2021/02/Bill-erickson-portfolio-website.jpeg">
-                    <p>Portfólio</p>
-                </li>
                 <li>
                     <img src="https://wpastra.com/wp-content/uploads/2021/02/Bill-erickson-portfolio-website.jpeg">
                     <p>Portfólio</p>
@@ -143,5 +168,17 @@
     <footer>
         <p>Obrigado por ler até aqui. Projeto feito por Cristiano. &copy; 2022 TATAKAE.</p>
     </footer>
+    <script>
+        const $enableMobileMenuButton = document.querySelector('.mobile-menu-icon');
+        const $mobileMenu = document.querySelector('.mobile-menu');
+
+        function toggleMobileMenu() {
+            const currentDisplay = $mobileMenu.style.display;
+            $mobileMenu.style.display = currentDisplay === 'block' ? 'none' : 'block';
+        }
+
+        $enableMobileMenuButton.addEventListener('click', toggleMobileMenu);
+        $mobileMenu.querySelectorAll('li').forEach((e) => e.addEventListener('click', toggleMobileMenu));
+    </script>
 </body>
 </html>
